@@ -10,7 +10,7 @@ services:
       MYSQL_USER: pradeep
       MYSQL_PASSWORD: pradeep
     ports:
-      - 3306:3306
+      - 3307:3307
     volumes:
      - dockerAngularSpringDatabaseData:/var/lib/mysql
     networks:
@@ -20,7 +20,7 @@ services:
     image: openjdk:10-jre-slim
     container_name: spring-boot-ems
     ports:
-      - 8080:8080
+      - 8081:8081
     depends_on:
       - database
     volumes:
